@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Light and Sound Memory game</title>
+
+    <!-- Import FONTAWESOME Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <!--
+      This is the body of the page
+      Look at the elements and see how they appear in the rendered page on the right
+      Each element is defined using tags, with < and > indicating where each one opens and closes
+      There are elements for sections of the page, images, text, and more
+      The elements include attributes referenced in the CSS for the page style
+    -->
+
+    <!-- The wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+        <div class="content" role="main">
+            <!-- This is the start of content for our page -->
+            <h1 class="title">Light and Sound Memory Game</h1>
+            <!-- Instructions on using this project -->
+            <div class="instructions">
+                <p>
+                    Welcome to the game! Repeat back the pattern by pressing the buttons.
+                </p>
+                <!-- ADD BUTTON HERE -->
+                <div class="playbtns">
+                    <button id="startBtn" onclick="startGame()">Start</button>
+                    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+                </div>
+                <!-- Once you've added the button from the readme, click it in the page -->
+                <!-- Check out the function in script.js to see how it works -->
+            </div>
+
+            <dv id="gameButtonArea">
+                <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()">
+                    <i class="fa-solid fa-martini-glass-citrus"></i>
+                </button>
+                <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </button>
+                <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()">
+                    <i class="fa-solid fa-cloud-moon"></i>
+                </button>
+                <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()">
+                    <i class="fa-solid fa-gamepad"></i>
+                </button>
+            </dv>
+        </div>
+    </div>
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #d9d2fd;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+  --secondary-font: "Montserrat";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;400&display=swap")
+    format("opentype");
+}
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+  color: #201d55;
+}
+
+h1 {
+  color: #6f42d1;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 40%;
+  text-align: center;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Button - Add it from the README instructions */
+#startBtn,
+#stopBtn {
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+/* Subheading */
+h2 {
+  color: #2800ff;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Instructions */
+.instructions {
+  margin: 1.3rem auto 0;
+  font-family: var(--secondary-font);
+  font-weight: 300;
+}
+.instructions p {
+  margin: 15px 0 25px 0;
+}
+
+/* Start and Stop Buttons */
+.playbtns {
+  display: flex;
+  justify-content: center;
+}
+
+/* Game Buttons */
+#gameButtonArea {
+  margin: 15px;
+}
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+i {
+  font-size: 90px;
+}
+
+/* Button/Icon Colors */
+#button1 {
+  color: #cf8ba9;
+}
+#button1:active,
+#button1.lit {
+  color: #b36285;
+}
+
+#button2 {
+  color: #aaa1c8;
+}
+#button2:active,
+#button2.lit {
+  color: #7a6f9f;
+}
+
+#button3 {
+  color: #ffbc7d;
+}
+#button3:active,
+#button3.lit {
+  color: #d09258;
+}
+
+#button4 {
+  color: #192a51;
+}
+#button4:active,
+#button4.lit {
+  color: #0b152b;
+}
+
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+*/
+.dipped {
+  transform: translateY(5px);
+}
