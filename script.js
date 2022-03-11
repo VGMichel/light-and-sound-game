@@ -1,10 +1,10 @@
 // global constants
-const clueHoldTime = 700; //how long to hold each clue's light/sound
+const clueHoldTime = 400; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
-const nextClueWaitTime = 700; //how long to wait before starting playback of the clue sequence
+const nextClueWaitTime = 600; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern = [2, 1, 3, 3, 4, 1, 3, 2];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
