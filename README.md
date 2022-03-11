@@ -49,13 +49,13 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 [YOUR ANSWER HERE]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+[My biggest challenge I encountered was trying to center a few elements (the start/stop button and the icons). Although I have experience with CSS, there are some new elements that have been implemented since I took a pause from development. I've been working on getting comfortable using flexbox with some of my other projects, so I played around with some of the elements and I used one of the resources I linked in the first question to center everything properly.]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+[Most of my questions surround Javascript. ]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+[If I spent a few more hours on this project, I would like to have it so that the alert/pop-up wouldn't come from the browser. In other words, I would like a stylized]
 
 
 
