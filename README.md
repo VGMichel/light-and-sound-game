@@ -46,18 +46,18 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+[https://stackoverflow.com/questions/14474452/can-i-change-the-color-of-font-awesomes-icon-color]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[My biggest challenge I encountered was trying to center a few elements (the start/stop button and the icons). Although I have experience with CSS, there are some new elements that have been implemented since I took a pause from development. I've been working on getting comfortable using flexbox with some of my other projects, so I played around with some of the elements and I used one of the resources I linked in the first question to center everything properly.]
+[My biggest challenge I encountered was trying to center a few elements (the start/stop button and the icons). Although I have experience with CSS, there are some new elements that have been implemented since I took a pause from development. I've been working on getting comfortable using flexbox with some of my other projects, so I played around with some of the elements and I used one of the resources I linked in the first question to center everything properly. I also had problems changing the colors of the icons I was using but, after some trial and error, I figured out that I was targeting the wrong element.]
 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[Most of my questions surround Javascript. ]
+[Since javascript is the language I have less experience with, I would like to know how much logic goes into creating functions. I'm usually unsure of how many steps need to be taken to get a function to operate properly as well as how many variables should be declared. I also want to know if web development becomes simpler or more complex as web design trends change and evolve. My first few interactions with Javascript years ago didn't include let or const, so I want to know why they were introduced.]
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
-[If I spent a few more hours on this project, I would like to have it so that the alert/pop-up wouldn't come from the browser. In other words, I would like a stylized]
+[If I spent a few more hours on this project, I would like to have it so that the alert/pop-up wouldn't come from the browser. In other words, I would like to create a special stylized pop up for when someone either wins or loses the game. I would also change each button to a different sound effect rather than a tone. For example, I would use a water droplet sound, a twinkle, a bell and 8-bit sounds (for the game controller).]
 
 
 
