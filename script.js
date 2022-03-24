@@ -1,7 +1,7 @@
 // global constants
-const clueHoldTime = 400; //how long to hold each clue's light/sound
-const cluePauseTime = 333; //how long to pause in between clues
-const nextClueWaitTime = 600; //how long to wait before starting playback of the clue sequence
+let clueHoldTime = 400; //how long to hold each clue's light/sound
+let cluePauseTime = 333; //how long to pause in between clues
+let nextClueWaitTime = 600; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
 var pattern = [2, 1, 3, 3, 4, 1, 3, 2];
@@ -52,9 +52,16 @@ function playClueSequence(){
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
-    delay += clueHoldTime 
+    delay += clueHoldTime; 
     delay += cluePauseTime;
   }
+}
+
+// Speed Up Function
+function speedUp() {
+  nextClueWaitTime -= 90;
+  cluePauseTime -= 40;
+  clueHoldTime -= 50;
 }
 
 function guess(btn){
@@ -73,6 +80,7 @@ function guess(btn){
       }else{
         //Pattern correct. Add next segment
         progress++;
+        speedUp()
         playClueSequence();
       }
     }else{
