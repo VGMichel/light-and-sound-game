@@ -56,7 +56,7 @@ https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/]
 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-Since javascript is the language I have less experience with, I would like to know how much logic goes into creating functions. I'm often unsure of how many steps need to be taken to get a function to operate properly as well as how many variables should be declared. I'm also curious about changes in web devel;opment as web design trends change and evolve. My first few interactions with Javascript years ago didn't include declarations like let or const, so I would like to know in what ways they've helped improve building websites and apps.
+[Since javascript is the language I have less experience with, I would like to know how much logic goes into creating functions. I'm often unsure of how many steps need to be taken to get a function to operate properly as well as how many variables should be declared. I'm also curious about changes in web devel;opment as web design trends change and evolve. My first few interactions with Javascript years ago didn't include declarations like let or const, so I would like to know in what ways they've helped improve building websites and apps.]
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
